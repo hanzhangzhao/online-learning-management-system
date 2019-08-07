@@ -1,0 +1,228 @@
+<?xml version="1.0"?>
+<course>
+
+	<unit title="Unit 2: Client-side Scripting in JavaScript">
+		<lesson title="Introduction to scripting">
+			<content>
+
+				<list>
+          JavaScript is used to enhance the functionality and appearance of web pages.
+        </list>
+        <list>
+          The &lt;script&gt; tag indicates to the browser that the text that follows is part of a script. Attribute
+          type specifies the MIME type of the scripting language used in the script— such as text/javascript.
+        </list>
+        <list>
+          The browser’sdocument object represents the HTML5 document the browser is currently displaying.
+          The document object allows a you to specify HTML5 text to display in the document. The browser creates a
+          complete set of objects that allow you to access and manipulate every element of an HTML5 document.
+        </list>
+        <list>
+          JavaScript is case sensitive. Not using the proper uppercase and lowercase letters is a syntax error.
+        </list>
+        <list>
+          The escape sequence \n is the newline character. It causes the cursor in the HTML5 document to
+          move to the beginning of the next line.
+        </list>
+        <list>
+          Keywords are words with special meaning in JavaScript. The keyword var at the beginning of the statement
+          indicates that the word name is a variable. A variable is a location in the computer’s memory where a value
+          can be stored for use by a script. All variables have a name and value, and should be declared with a var
+          statement before they’re used in a script. The name of a variable can be any valid identifier consisting of
+          letters, digits, underscores ( _ ) and dollar signs ($) that does not begin with a digit and is not a reserved JavaScript keyword.
+        </list>
+        <list>
+          The window object’s prompt method displays a dialog into which the user can type a value. The first argument
+          is a message (called a prompt) that directs the user to take a specific action. An optional second argument,
+          separated from the first by a comma, may specify the default string to be displayed in the text field.
+        </list>
+        <list>
+          JavaScript’s if statement allows a script to make a decision based on the truth or falsity of a condition. If
+          the condition is met (i.e., the condition is true;), the statement in the body of the if statement is executed.
+          If the condition is not met (i.e., the condition is false), the statement in the body of the if statement is not executed.
+        </list>
+			</content>
+		</lesson>
+
+    <lesson title="Control Statements">
+      <content>
+        <list>
+          Normally, statements in a script execute one after the other, in the order in which they’re written. This process
+          is called sequential execution. Various JavaScript statements enable you to specify that the next statement to be
+          executed may not necessarily be the next one in sequence. This is known as transfer of control.
+        </list>
+        <list>
+          JavaScript provides three selection structures. The if selection statement performs an action only if a condition
+          is true. The if…else selection statement performs an action if a condition is true and a different action if the
+          condition is false. The switch selection statement performs one of many different actions, depending on the value
+          of an expression.
+        </list>
+        <list>
+          The conditional operator (?:;) is closely related to the if…else statement. Operator ?: is JavaScript’s only ternary
+          operator—it takes three operands. The operands together with the ?: operator form a conditional expression. The
+          first operand is a boolean expression, the second is the value for the conditional expression if the boolean
+          expression evaluates to true and the third is the value for the conditional expression if the boolean expression
+          evaluates to false.
+        </list>
+        <list>
+          The while repetition statement allows the you to specify that an action is to be repeated while some condition
+          remains true.
+        </list>
+        <list>
+          Counter-controlled repetition is often called definite repetition, because the number of repetitions is known
+          before the loop begins executing.
+        </list>
+        <list>
+          In sentinel-controlled repetition, a special value called a sentinel value (also called a signal value,
+          a dummy value or a flag value) indicates the end of data entry. Sentinel-controlled repetition is often called
+          indefinite repetition, because the number of repetitions is not known in advance.
+        </list>
+      </content>
+    </lesson>
+    
+		<lesson title="Function">
+			<content>
+        <list>
+          The best way to develop and maintain a large programis to construct it from small, simple pieces, or modules.
+          This technique is called divide and conquer.
+        </list>
+        <list>
+          JavaScript programs are written by combining new functions that the programmer writes with "repackaged" functions
+          and objects available in JavaScript. The term method implies that the function belongs to a particular object.
+          We refer to functions that belong to a particular JavaScript object as methods; all others are referred to as
+          functions.
+        </list>
+        <list>
+          JavaScript provides several objects that have a rich collection ofmethods for performing common mathematical
+          calculations, string manipulations, date and time manipulations, and manipulations of collections of data called
+          arrays. These objects make your job easier, because they provide many of the capabilities programmers frequently
+          need.
+        </list>
+        <list>
+          The return statement passes information from inside a function back to the point in the program where it was
+          called. A function must be called explicitly for the code in its body to execute.
+        </list>
+        <list>
+          There are three ways to return control to the point at which a function was invoked. If the function does not
+          return a result, control returns when the program reaches the function-ending right brace or when the statement
+          return; is executed. If the function does return a result, the statement return expression; returns the value
+          of expression to the caller.
+        </list>
+        <list>
+          All variables declared with the keyword var in function definitions are local variables — this means that they
+          can be accessed only in the function in which they’re defined.
+        </list>
+        <list>
+          An HTML5audio element embeds audio into aweb page. Setting the preload attribute to "auto" indicates to the
+          browser that it should consider downloading the audio clip so that it’s ready to be played.
+        </list>
+        <list>
+          Each identifier in a program has a scope. The scope of an identifier for a variable or function is the portion
+          of the program in which the identifier can be referenced.
+        </list>
+        <list>
+          A recursive function knows how to solve only the simplest case, or base case. If the function is called with a
+          base case, it returns a result. If the function is called with a more complex problem, it knows how to divide
+          the problem into two conceptual pieces—a piece that the function knows how to process (the base case) and a
+          simpler or smaller version of the original problem.
+        </list>
+        <list>
+          Both iteration and recursion involve repetition: Iteration explicitly uses a repetition statement; recursion
+          achieves repetition through repeated function calls. Iteration and recursion each involve a termination test:
+          Iteration terminates when the loop-continuation condition fails; recursion terminates when a base case is recognized.
+        </list>
+			</content>
+		</lesson>
+
+		<lesson title="Object">
+			<content>
+        <list>
+          An object’s methods are called by writing the name of the object followed by a dot (.) and the name of the method.
+          In parentheses following the method name are arguments to the method.
+        </list>
+        <list>
+          Characters are the building blocks of JavaScript programs. Every program is composed of a sequence of characters
+          grouped together meaningfully that’s interpreted by the computer as a series of instructions used to accomplish a task.
+        </list>
+        <list>
+          String method charAt returns the character at a specific index in a string. Indices for the characters in a string
+          start at 0 (the first character) and go up to (but do not include) the string’s length (i.e., if the string contains
+          five characters, the indices are 0 through 4). If the index is outside the bounds of the string, the method returns
+          an empty string.
+        </list>
+        <list>
+          String method charCodeAt returns the Unicode value of the character at a specific index in a string.
+          String method toLowerCase returns the lowercase version of a string. String method toUpperCase returns the uppercase version of a string.
+        </list>
+        <list>
+          String method indexOf determines the location of the first occurrence of its argument in the string used to
+          call the method. If the substring is found, the index at which the first occurrence of the substring begins is
+          returned; otherwise, -1 is returned. This method receives an optional second argument specifying the index from
+          which to begin the search.String method lastIndexOf determines the location of the last occurrence of its argument
+          in the string used to call the method.
+        </list>
+        <list>
+          The process of breaking a string into tokens is called tokenization. Tokens are separated from one another by
+          delimiters, typically white-space characters such as blank, tab, newline and carriage return.
+        </list>
+        <list>
+          String method split breaks a string into its component tokens. The argument tomethod split is the delimiter
+          string — the string that determines the end of each token in the original string. Method split returns an array
+          of strings containing the tokens.
+        </list>
+        <list>
+          JavaScript programmers can create Boolean objects explicitly with the statement
+          <block>b = new Boolean( booleanValue );</block>
+          The argument booleanValue specifies the value of the Boolean object (true or false). If boolean-Value is false, 0,
+          null, Number.NaN or the empty string (""), or if no argument is supplied, the new Boolean object contains false.
+          Otherwise, the new Boolean object contains true.
+        </list>
+        <list>
+          JavaScript programmers can create a Number object with the statement
+          <block>var n = new Number( numericValue );</block>
+          The argument numericValue is the number to store in the object. Although you can explicitly create Number objects,
+          normally they’re created when needed by the JavaScript interpreter.
+        </list>
+        <list>
+          Each JSON object is represented as a list of property names and values contained in curly braces,
+          in the following format:
+          <block>{ propertyName1 : value1, propertyName2 : value2 }</block>
+          Arrays are represented in JSON with square brackets in the following format:
+          <block>[ value0, value1, value2 ]</block>
+        </list>
+			</content>
+		</lesson>
+
+		<quiz title="Unit 2 Quiz">
+			<question txt="1. Which of the following is not a reserved word in JavaScript?">
+				<ans correct="0">interface</ans>
+				<ans correct="0">throws</ans>
+				<ans correct="1">program</ans>
+				<ans correct="0">short</ans>
+			</question>
+			<question txt="2. In JavaScript, we do not have datatypes like integer and float. What is the function that can be used to check if the number is an integer or not?">
+				<ans correct="1">isInteger(value)</ans>
+				<ans correct="0">ifInteger(value)</ans>
+				<ans correct="0">Integer(value)</ans>
+				<ans correct="0">ifinteger(value)</ans>
+			</question>
+			<question txt="3. Which built-in method adds one or more elements to the end of an array and returns the new length of the array?">
+				<ans correct="1">forEach()</ans>
+				<ans correct="0">every()</ans>
+				<ans correct="0">forEvery()</ans>
+				<ans correct="0">each()</ans>
+			</question>
+			<question txt="4. Which of the following is an advantage of using JavaScript?">
+				<ans correct="0">Increased interactivity.</ans>
+				<ans correct="0">Less server interaction.</ans>
+				<ans correct="0">Immediate feedback from the users.</ans>
+				<ans correct="1">All of the above.</ans>
+			</question>
+			
+		</quiz>
+
+	</unit>
+
+
+
+</course>

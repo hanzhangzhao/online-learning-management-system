@@ -1,0 +1,123 @@
+
+.container {
+    text-align: center;
+    width: 80%;
+}
+
+.containerCenter {
+
+    height: 80vh;
+    margin-top: 20vh;
+    margin-bottom: 10vh;
+    text-align: center;
+}
+
+    .containerCenter p {
+        margin-left: 1vh;
+        margin-right: 1vh;
+        text-align: center;
+    }
+
+.userContainerCenter{
+    margin-top: 7vh;
+}
+
+
+#user, #logOut{
+    display: inline;
+}
+
+#error
+{
+	margin-top: 1%;
+	color: red;
+}
+
+
+
+#loginSignUp {
+	text-align: center;
+	margin-top: 1%;
+	margin-right: 1%;
+}
+
+
+#topTenContainer {
+	width: 80%;
+	height: 83vh;
+	margin-left: 10%;
+	margin-bottom: 20vh;
+}
+
+
+#userHomeContainer {
+	margin-top: 100px;
+}
+
+#user {
+	display: inline-block;
+}
+
+.logoutDiv {
+	width: 100%;
+	text-align: right;
+}
+
+#logOut {
+    margin-top: -0.5%;
+    margin-right: 1%;
+}
+
+.lessonContent{
+    text-align:left;
+}
+
+.url {
+	position: relative;
+	display: inline-block;
+	margin-right: 20px;
+}
+
+
+.url a {
+	text-decoration: none;
+}
+
+.edit, .delete {
+	margin: 5px;
+}
+
+#save {
+	margin-left: 1%;
+}
+
+#loginPassword{
+    margin-top: 3vh;
+}
+
+#signupPassword{
+    margin-top: 3vh;
+}
+
+.btnBack{
+    text-align: left;
+    margin: 1vh 0;
+}
+
+table {
+    width: 90%;
+    margin-top: 1%;
+    margin-left: 5%;
+}
+
+
+#unitSelected {
+
+    margin-top: 6%;
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+#btnStartUnit{
+    margin-top:3vh;
+}

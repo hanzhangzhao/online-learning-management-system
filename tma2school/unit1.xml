@@ -1,0 +1,256 @@
+<?xml version="1.0"?>
+<course>
+
+	<unit title="Unit 1: the Web &amp; HTML5 &amp; CSS3">
+		<lesson title="the Web">
+			<content>
+
+				<list>
+					The World Wide Web, shortened to the Web, is a system of interlinked, hypertext documents accessed
+					via the Internet. It is created to share files/documents and overcome the barrier of different file formats.
+				</list>
+				<list>
+					Hypertext refers to text on a computer that will lead the user to other, related information on demand.
+					hypertext documents are created using a special kind of document formatting or "markup" language called
+					HyperText Markup Language (HTML).
+				</list>
+				<list>
+					HTML is sent or received over the network using HyperText Transfer Protocol (HTTP). A browser is a software
+					program which interprets the HTML documents and displays it on the user’s screen.
+				</list>
+				<list>
+					A web server is server software, or hardware dedicated to running said software, that can satisfy World Wide Web
+					client requests. A web server can, in general, contain one or more websites. A web server processes incoming network
+					requests over HTTP and several other related protocols.
+				</list>
+				<list>
+					The HTTP protocol is a request/response protocol based on the client/server based architecture where web browsers,
+					robots and search engines, etc. act like HTTP clients, and the Web server acts as a server.
+				</list>
+				<list>
+					The HTTP client sends a request to the server in the form of a request method, URI, and protocol version,
+					followed by a MIME-like message containing request modifiers, client information, and possible body content over
+					a TCP/IP connection.
+					The HTTP server responds with a status line, including the message's protocol version and a success or error code,
+					followed by a MIME-like message containing server information, entity meta information, and possible
+					entity-body content.
+				</list>
+				<list>
+					Each document/resource on the WWW needs to have an identifier in order to be accessed by others. A Uniform
+					Resource Identifier (URI), is a compact string of characters used to identify or name a resource. A Uniform Resource
+					Locator (URL) is a URI which provides means of obtaining the resource by describing its network "location".
+				</list>
+			</content>
+		</lesson>
+
+		<lesson title="HTML5">
+			<content>
+				<list>
+					HTML5 is the latest evolution of the standard that defines HTML. The term represents two different concepts.
+					It is a new version of the language HTML, with new elements, attributes, and behaviors, and a larger set of
+					technologies that allows the building of more diverse and powerful Web sites and applications.
+				</list>
+				<list>
+					Text Level Semantics:
+					
+						<def>a element</def> -- anchor. useful to provide a link for a block of content. also helpful for cross
+						reference using id.
+						<def>em element</def> -- emphasis. emphasizing a particular word or phrase.
+						<def>i element</def> -- change of context. voice, thinking, mood, etc.
+						<def>strong element</def> -- represents strong importance of its contents, does not change the meaning.
+						<def>b</def> -- content to draw attention. without adding importance or change in mood or voice.
+						<def>mark</def> -- part of text highlighted for reference purpose. may not be intended by original author.
+						<def>small element</def> -- small print. disclaimers, caveats, legal restrictions or copyrights.
+						Meant for short runs of text only. It doesn't mean low importance.
+						<def>s element</def> -- content no longer relevant or accurate. not to be confused with del
+						<def>data</def> -- provides machine readable form of content.
+						<def>time</def> -- special case of data. date, time, time zone, etc.
+						<def>
+							and much more
+							<span>&#8942;</span>
+						</def>
+					
+				</list>
+				<list>
+					Sections:
+					
+						<def>body</def> -- main content of the document. just one per page.
+						<def>section</def> -- parts of the document. e.g. home page can be split into intro, news, contact, etc.
+						<def>article</def> -- useful for syndication. independently distributable or reusable.
+						<def>nav</def> -- navigation. a section with navigation links. special case of section.
+						<def>aside</def> -- content related to and part of main content. could contain q quote.
+						<def>h1, h2, ..., h6</def> -- headings, subheadings
+						<def>hgroup</def> -- heading of a section. used for grouping h1, h2, ....
+						<def>header</def> -- group of introductory or navigation aids. could contain hgroup
+						<def>footer</def> -- represents footer. not necessarily that has to appear in the end.
+						because it is presentation concern. e.g. author, copyright, etc.
+						<def>address</def> -- not meant for postal addresses unless it is related to contact
+						info of the current page or article.
+					
+				</list>
+				<list>
+					Lists:
+					
+						<def>ol</def> -- each list item can be created with the li tag. Could manually change the numbers
+						appear on the list items. The type of numeral can be changed by type attribute.
+						<def>ul</def> --  each list item can be created with the li tag. can nest lists to represent sub-items.
+						The nested list has to be a child of the li element.
+						<def>dl</def> --  consists of name-value groups, where the name is given in the dt element,
+						and the value is given in the dd element.
+					
+				</list>
+				<list>
+					Input Control Elements:
+					
+						<def>type</def> -- Identifies the type of input control to display. Acceptable values are hidden, text,
+						tel, url, email, password, date, time, number, range, color, checkbox, radio, file,
+						submit, image, reset, and button. Defaults to text.
+						<def>checked</def> -- Has type attribute radio and checkbox, boolean attribute indicates the control
+						is selected or not.
+						<def>multiple</def> -- Allow the user to pass more than one file or email type input.
+						<def>required</def> -- Indicates a value must be present or the element must be checked in order for the
+						form to be submitted.
+						<def>autofocus</def> -- The input element should get the focus when page loads.
+					
+
+				</list>
+				<list>
+					IFrames:
+					
+						<def>name</def> -- Sets the element's name, to be used with an a tag to change the iframe's src.
+						<def>src</def> -- Specifies the page that will be displayed in the frame.
+						<def>srcdoc</def> -- Specifies the content that will be displayed in the frame. The content must be
+						valid HTML.
+						<def>sandbox</def> -- When set, the contents of the iframe is treated as being from a unique origin
+						and features including scripts, plugins, forms and popups will be disabled.
+						Restrictions can be selectively relaxed by adding a space separated list of values.
+						See the table in Remarks for possible values.
+					
+
+				</list>
+				<list>
+					Event Attributes:
+					
+						<def>onblur</def> -- Fires the moment that the element loses focus.
+						<def>onchange</def> -- Fires the moment when the value of the element is changed.
+						<def>oncontextmenu</def> -- Script to be run when a context menu is triggered.
+						<def>onfocus</def> -- Fires the moment when the element gets focus.
+						<def>oninput</def> -- Script to be run when an element gets user input.
+						<def>oninvalid</def> -- Script to be run when an element is invalid.
+						<def>onreset</def> -- Fires when the Reset button in a form is clicked.
+						<def>onsearch</def> -- Fires when the user writes something in a search field (for input ="search").
+						<def>onselect</def> -- Fires after some text has been selected in an element.
+						<def>onsubmit</def> -- Fires when a form is submitted.
+						<def>onkeydown</def> -- Fires when a user is pressing a key.
+						<def>onkeypress</def> -- Fires when a user presses a key.
+						<def>onkeyup</def> -- Fires when a user releases a key.
+					
+				</list>
+			</content>
+		</lesson>
+
+		<lesson title="CSS3">
+			<content>
+				<list>
+					<strong>CSS selectors</strong> -- Ways to identify the portion of html to set the styles to. It could be based on id, class, span, div, etc.
+				</list>
+				<list>
+					<strong>Precedence</strong> -- The styles will be applied on a particular precedence. User's browser preferences take the top priority. Then the parent element's style, and so on.
+				</list>
+				<list>
+					<strong>Possibilities</strong> -- font size, typeface, underline, overline, strikethrough, color, etc.
+				</list>
+				<list>
+					<strong>bullet styles</strong> can change. Within the bullet points first can be different, or the last can be different, or the nth item can be different.
+				</list>
+				<list>
+					Text:
+					
+						<def>text-shadow</def> -- provides shadow effect.
+						<def>text-transform</def> -- uppercase, camel case, etc.
+					
+				</list>
+				<list>
+					Font:
+					
+						<def>font-size</def> -- don't use pt or px since they cannot be standardized. Reference this article
+						for best practice.
+						<def>font possibilities</def> -- simply everything. font-weight, line-height, letter-spacing,
+						word-spacing, font-variant, font-style, alignments, indent, white-space,
+						text-decoration
+					
+				</list>
+				<list>
+					color and background:
+					
+						<def>ways to specify colors</def> -- named colors, hex, rgb, hsl, rgba, hsla
+						<def>background</def> -- color, image, pattern / tiling, positioning, attachment (scroll/fixed).
+						Allows shorthand for mixing different options.
+					
+				</list>
+				<list>
+					List:
+						<def>list-style-type</def> -- none for horizontal menu. numbered, roman, circle, etc.
+						<def>list-style-image</def> -- image in place of bullets
+						<def>list-style-position</def> -- level of indentation
+				</list>
+				<list>
+					Table:
+						<def>border, border-spacing, caption-side</def>
+						There are just too many ways to slice and dice tables. Sky is the limit!
+						border styles, background color for specific row/column/cell, etc.
+				</list>
+				<list>
+					Box:<br></br>
+					
+						As opposed to inline elements such as <def>i, em,</def> etc., special styling can be done for block style
+						or box elements such as <def>div</def>.
+						Background colour, margin, alignment, border, outline, stacking, overflow are some of
+						the possibilities.
+						<def>cursor</def> allows to set a cursor style when a particular element is hovered over.
+						<def>border-radius</def> provides fillets for box. Specific fillet is also possible such
+						as border-bottom-right-border.
+					
+				</list>
+				<list>Get rid of the underline in links: text-decoration: none</list>
+			</content>
+		</lesson>
+
+		<quiz title="Unit 1 Quiz">
+			<question txt="1. Which value of Socket.readyState atribute of WebSocket indicates that the connection is going through the closing handshake?">
+				<ans correct="0">0</ans>
+				<ans correct="0">1</ans>
+				<ans correct="1"><label>2</label></ans>
+				<ans correct="0">3</ans>
+			</question>
+			<question txt="2. Which of the following tag can be used to mark up a conversation in HTML5?">
+				<ans correct="1"><label>dialog</label></ans>
+				<ans correct="0">nav</ans>
+				<ans correct="0">footer</ans>
+				<ans correct="0">figure</ans>
+			</question>
+			<question txt="3. Which built-in method adds one or more elements to the end of an array and returns the new length of the array?">
+				<ans correct="1"><label>push()</label></ans>
+				<ans correct="0">last()</ans>
+				<ans correct="0">put()</ans>
+				<ans correct="0">None of the above</ans>
+			</question>
+			<question txt="4. What is css Float?">
+				<ans correct="0">allows other elements to wrap around an element</ans>
+				<ans correct="0">element can be pushed to the left or right</ans>
+				<ans correct="0">element can be pushed to any direction</ans>
+				<ans correct="1"><label>both a and b above</label></ans>
+			</question>
+      <question txt="5. Which of the following defines a measurement relative to a font's x-height?">
+        <ans correct="0">%</ans>
+        <ans correct="0">cm</ans>
+        <ans correct="0">em</ans>
+        <ans correct="1"><label>ex</label></ans>
+      </question>
+		</quiz>
+
+	</unit>
+
+
+
+</course>

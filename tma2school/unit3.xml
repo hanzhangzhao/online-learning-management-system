@@ -1,0 +1,230 @@
+<?xml version="1.0"?>
+<course>
+
+  <unit title="Unit 3: XML and Ajax">
+    <lesson title="XML">
+      <content>
+
+        <list>
+          The eXtensible Markup Language (XML) is a portable, widely supported, open (i.e., nonproprietary) technology for data storage and exchange.
+        </list>
+        <list>
+          An XML parser is responsible for identifying components of XML documents (typically files with the .xml extension) and then
+          storing those components in a data structure for manipulation.
+        </list>
+        <list>
+          An XML document that conforms to a DTD/schema (i.e., has the appropriate structure) is valid.
+          If an XML parser (validating or non-validating) can process an XML document successfully,
+          that XML document is well-formed
+        </list>
+        <list>
+          An XML document begins with an XML declaration, which identifies the document as
+          an XML document. The version attribute specifies the version of XML syntax used in
+          the document.
+        </list>
+        <list>
+          Data can be placed between tags or in attributes (name/value pairs that appear within the angle
+          brackets of start tags). Elements can have any number of attributes.
+        </list>
+        <list>
+          XML allows document authors to create their own markup, and as a result, naming collistsions
+          (i.e., two different elements that have the same name) can occur. XML namespaces provide a means for document authors to prevent collisions.
+        </list>
+        <list>
+          Each namespace prefix is bound to a Uniform Resource Identifier (URI) that
+          uniquely identifies the namespace. A URI is a series of characters that differentiate names. Document
+          authors create their own namespace prefixes. Any name can be used as a namespace prefix,
+          but the namespace prefix xml is reserved for use in XML standards.
+        </list>
+        <list>
+          To eliminate the need to place a namespace prefix in each element, authors can specify a default
+          namespace for an element and its children. We declare a default namespace using keyword xmlns
+          with a URI as its value.
+        </list>
+        <list>
+          Document authors commonly use URLs (Uniform Resource Locators) for URIs, because
+          domain names (e.g., deitel.com) in URLs must be unique.
+        </list>
+        <list>
+          DTDs and schemas specify documents' element types and attributes and their relationships to
+          one another. They enable an XML parser to verify whether an XML document is valid (i.e., its
+          elements contain the proper attributes and appear in the proper sequence).
+        </list>
+        <list>
+          A DTD expresses the set of rules for document structure using an EBNF (Extended Backus-Naur
+          Form) grammar.
+        </list>
+        <list>
+          XML schemas use XML syntax and are themselves XML documents. Unlike DTDs, XML Schema documents can specify what type of data (e.g., numeric,
+          text) an element can contain.
+        </list>
+        <list>
+          An XML document that conforms to a schema document is schema valid.
+        </list>
+        <list>
+          XML allows authors to create their own tags to describe data precisely.
+          Some of these XML vocabularies include MathML (Mathematical Markup Language),
+          Scalable Vector Graphics (SVG), WirelessMarkup Language (WML), Extensible
+          Business Reporting Language (XBRL), Extensible User Interface Language (XUL), Product Data Markup Language (PDML), W3C XML Schema and Extensible
+          Stylesheet Language (XSL).
+        </list>
+        <list>
+          eXtensible Stylesheet Language (XSL) can convert XML into any text-based document.
+          XSL documents have the extension .xsl.
+        </list>
+        <list>
+          XPath is a string-based language of expressions used by XML and many of its related
+          technologies for effectively and efficiently locating structures and data (such as specific elements
+          and attributes) in XML documents.
+        </list>
+        <list>
+          The XSLT does not analyze every node of the source tree; it selectively navigates the source tree
+          using XPaths select and match attributes.
+        </list>
+        <list>
+          Although an XML document is a text file, retrieving data from the document using traditional
+          sequential file-processing techniques is neither practical nor efficient, especially for adding and
+          removing elements dynamically. Upon successfully parsing a document, some XML parsers store document data as tree structures
+          in memory. This hierarchical tree structure is called a Document Object Model (DOM) tree, and an XML parser that creates this
+          type of structure is known as a DOMparser.
+        </list>
+        <list>
+          An XMLHttpRequest object can be used to load an XML document.The XMLHttpRequest object's open method can be used to create a get
+          request for an XML document at a specified URL. When the last argument's value is false, the request will be
+          made synchronously.
+          XMLHttpRequest method send executes the request to load the XML document. When
+          the request completes, the resulting XML document is stored in the XMLHttpRequest object's responseXML
+          property.
+        </list>
+      </content>
+    </lesson>
+
+    <lesson title="Ajax-Enabled Rich Internet Applications with XML and JSON">
+      <content>
+        <list>
+          Rich Internet Applications (RIAs) are web applications that approximate the look, feel
+          and usability of desktop applications. RIAs have two key attributes -- performance and rich GUI.
+          RIA performance comes from Ajax (Asynchronous JavaScript and XML), which uses client-side scripting to make web applications more responsive.
+        </list>
+        <list>
+          Ajax applications separate client-side user interaction and server communication and run them
+          in parallel, making the delays of server-side processing more transparent to the user. "Raw" Ajax uses JavaScript to send
+          asynchronous requests to the server, then updates the page using the DOM.
+        </list>
+        <list>
+          The client-side of Ajax applications is written in HTML5 and CSS3 and uses JavaScript to add
+          functionality to the user interface.
+        </list>
+        <list>
+          XML and JSON are used to structure the data passed between the server and the client.
+        </list>
+        <list>
+          The Ajax component that manages interaction with the server is usually implemented with JavaScript's XMLHttpRequest
+          object -- commonly abbreviated as XHR.
+        </list>
+        <list>
+          In an Ajax application, when the user interacts with a page, the client creates an XMLHttpRequest
+          object to manage a request. The XMLHttpRequest object sends the request to and awaits the response
+          from the server. The requests are asynchronous, allowing the user to continue
+          interacting with the application while the server processes the request concurrently. When the
+          server responds, the XMLHttpRequest object that issued the request invokes a callback function, which typically uses partial
+          page updates to display the returned data in the existing web page without reloading the entire page.
+        </list>
+        <list>
+          The callback function updates only a designated part of the page. Such partial page updates help
+          make web applications more responsive, making them feel more like desktop applications.
+        </list>
+        <list>
+          The XMLHttpRequest object (which resides on the client) is the layer between the client and the
+          server thatmanages asynchronous requests in Ajax applications. This object is supported on most
+          browsers, though they may implement it differently.
+        </list>
+        <list>
+          To initiate an asynchronous request, you create an instance of the XMLHttpRequest object, then
+          use its open method to set up the request and its send method to initiate the request.
+        </list>
+        <list>
+          Both iteration and recursion involve repetition: Iteration explicitly uses a repetition statement; recursion
+          achieves repetition through repeated function calls. Iteration and recursion each involve a termination test:
+          Iteration terminates when the loop-continuation condition fails; recursion terminates when a base case is recognized.
+        </list>
+        <list>
+          Making a request to a different server is known as cross-site scripting (also known as XSS). You can implement a
+          server-side proxy -- an application on the web application's web
+          server -- that can make requests to other servers on the web application's behalf.
+        </list>
+        <list>
+          When the third argument to XMLHttpRequest method open is true, the request is asynchronous.
+        </list>
+        <list>
+          A callback function is registered as the event handler for the XMLHttpRequest object's readystatechange
+          event. Whenever the request makes progress, the XMLHttpRequest calls the
+          readystatechange event handler.
+        </list>
+        <list>
+          Progress is monitored by the readyState property, which has a value from 0 to 4. The value 0
+          indicates that the request is not initialized and the value 4 indicates that the request is complete.
+        </list>
+        <list>
+          When the XMLHttpRequest object receives XML data, the XMLHttpRequest object parses and
+          stores the data as a DOM object in the responseXML property.
+          The XMLHttpRequest object's responseXML property contains the XML returned by the server.
+        </list>
+        <list>
+          DOM method:
+          <block>
+            <def>createElement</def> -- creates an HTML5 element of the specified type.
+            <def>setAttribute</def> -- adds or changes an attribute of an HTML5 element.
+            <def>appendChild</def> -- inserts one HTML5 element into another.
+            <def>innerHTML</def> -- obtain or change the HTML5 that's displayed in a particular element.
+          </block>
+        </list>
+        <list>
+          JSON (JavaScript Object Notation) -- a simple way to represent JavaScript objects as
+          strings -- is an alternative way (to XML) for passing data between the client and the server.
+        </list>
+        <list>
+          Each JSON object is represented as a list of property names and values contained in curly braces.
+          An array is represented in JSON with square brackets containing a comma-separated list of values.
+        </list>
+        <list>
+          JavaScript's JSON.parse function can convert JSON strings into JavaScript objects. JSON strings are easier
+          to create and parse than XML and require fewer bytes. For these reasons,
+          JSON is commonly used to communicate in client/server interaction.
+        </list>
+      </content>
+    </lesson>
+
+
+    <quiz title="Unit 3 Quiz">
+      <question txt="1. Which of the following is true about XML?">
+        <ans correct="0">XML is technology independent. It can be used by any technology for data storage and transmission purpose.</ans>
+        <ans correct="0">XML uses simple text format. It is human readable and understandable.</ans>
+        <ans correct="0">Using XSD, DTD and XML structure can be validated easily.</ans>
+        <ans correct="1">All of the above.</ans>
+      </question>
+      <question txt="2. Which method of JDOM Parser gets the root element of the XML?">
+        <ans correct="0">Node.getRootElement()</ans>
+        <ans correct="0">Element.getRootElement()</ans>
+        <ans correct="0">Node.getChild(Name)</ans>
+        <ans correct="1">Document.getRootElement()</ans>
+      </question>
+      <question txt="3. Which property is used to check whether AJAX request has been completed?">
+        <ans correct="1">readyState</ans>
+        <ans correct="0">onreadyState</ans>
+        <ans correct="0">open</ans>
+        <ans correct="0">ready</ans>
+      </question>
+      <question txt="4. Which of the following jQuery method can be used to attach a function to be executed whenever an AJAX request fails?">
+        <ans correct="0">ajaxStart(callback)</ans>
+        <ans correct="0">ajaxComplete(callback)</ans>
+        <ans correct="0">ajaxSend(callback)</ans>
+        <ans correct="1">ajaxError(callback)</ans>
+      </question>
+    </quiz>
+
+  </unit>
+
+
+
+</course>

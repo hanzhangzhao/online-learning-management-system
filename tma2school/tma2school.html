@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Sans:400,700">
+    <link rel="stylesheet" type="text/css" href="../shared/tma2.css">
+    <link rel="stylesheet" type="text/css" href="../part2.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <title>HomePage</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-xl bg-light">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="/tma2/tma2.htm">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/tma2/part1/part1.html">Part 1</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/tma2/part2/part2.html">Part 2</a>
+            </li>
+        </ul>
+    </nav>
+    <div class="container">
+        <div class="userContainerCenter">
+            <div class="logoutDiv">
+                <h4 id="user"></h4>
+                <button type="button" id="logOut" class="btn btn-primary">Logout</button>
+            </div>
+            <div id="EMLupload">
+                <hr>
+                <div class="input-group mb-3">
+                    <input id="tbxCoursePath" type="text" class="form-control" name="coursePath" placeholder="Please enter your EML file name.. (enter unit1.xml, unit2.xml or unit3.xml)">
+                    <div class="input-group-append">
+                        <button id="btnUpload" class="btn btn-primary">Upload</button>
+                    </div>
+                </div>
+
+                <p id="error"></p>
+                <div id="courseSelect">
+                    <h3>Courses Uploaded</h3>
+                    <p>Please select a unit to begin!</p>
+                    <div id="tblCourses">
+
+                    </div>
+                    <input id="btnStartUnit" class="btn btn-primary" type="submit" name="submit" value="Start Learning>"><br />
+                </div>
+            </div>
+            <div class="btnBack">
+                <input id="btnBackToSelection" class="btn btn-primary" type="submit" name="submit" value="< Go Back"><br />
+            </div>
+            <div id="unitSelected">
+            </div>
+            <input id="btnMark" class="btn btn-primary" type="submit" name="submit" value="Mark Quiz"><br />
+            <div class="btnBack">
+                <input id="btnBackToSelection2" class="btn btn-primary" type="submit" name="submit" value="< Go Back"><br />
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="../part2.js"></script>
+    <script type="text/javascript" src="parseDisplay.js"></script>
+    <script type="text/javascript" src="tma2school.js"></script>
+</body>
+</html>
